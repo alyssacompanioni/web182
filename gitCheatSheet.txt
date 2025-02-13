@@ -1,0 +1,34 @@
+Chapter 3: Install and Configure Git
+git --version: Check the installed Git version.
+git config --global user.name "Your Name": Set the global username.
+git config --global user.email "youremail@example.com": Set the global email.
+git config --list: List all configuration settings.
+
+Chapter 4: Push Your Code with Git
+git init: Initialize a new Git repository.
+git remote add origin <remote-repository-URL>: Add a remote repository.
+git clone <remote-repository-URL>: Clone a remote repository.
+git add <file>: Stage files for commit.
+git commit -m "message": Commit changes with a message.
+git push: Push changes to the remote repository.
+git pull: Pull changes from the remote repository.
+git status: Check the status of your working directory and staging area.
+
+Chapter 5: Make Changes to Files
+git status: Check the status of your working directory and staging area.
+git add <file>: Stage changes for commit.
+git commit -m "message": Commit changes with a message.
+git log: View commit history.
+git rm <file>: Delete files from the working directory and staging area.
+git mv <oldfile> <newfile>: Rename files.
+git reset <file>: Unstage changes.
+git checkout <commit-id>: Look back in Git history.
+git revert <commit-id>: Revert to an old state.
+
+Chapter 6: Important Concepts in Git
+echo <file> >> .gitignore: Ignore files.
+git branch <branch-name>: Create a new branch.
+git checkout <branch-name>: Switch to a branch.
+git merge <branch-name>: Merge a branch into the current branch.
+git commit -m "message": Write meaningful commit messages.
+git reset --hard <commit-id>: Get out of trouble by resetting to a specific commit.
