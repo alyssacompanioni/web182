@@ -1,0 +1,114 @@
+.
+├── index.html
+├── phase01
+│   ├── index.php
+│   ├── private
+│   │   ├── functions.php
+│   │   ├── initialize.php
+│   │   └── shared
+│   │       ├── salamander-footer.php
+│   │       └── salamander-header.php
+│   └── public
+│       ├── images
+│       ├── index.php
+│       ├── salamanders
+│       │   ├── index.php
+│       │   └── show.php
+│       └── stylesheets
+│           └── salamanders.css
+├── phase02
+│   ├── index.php
+│   ├── private
+│   │   ├── functions.php
+│   │   ├── initialize.php
+│   │   └── shared
+│   │       ├── salamander-footer.php
+│   │       └── salamander-header.php
+│   └── public
+│       ├── images
+│       ├── index.php
+│       ├── salamanders
+│       │   ├── create.php
+│       │   ├── edit.php
+│       │   ├── index.php
+│       │   ├── new.php
+│       │   └── show.php
+│       └── stylesheets
+│           └── salamanders.css
+├── phase03
+│   ├── index.php
+│   ├── private
+│   │   ├── database.php
+│   │   ├── db_credentials.php
+│   │   ├── functions.php
+│   │   ├── initialize.php
+│   │   ├── query_functions.php
+│   │   └── shared
+│   │       ├── salamander-footer.php
+│   │       └── salamander-header.php
+│   └── public
+│       ├── images
+│       ├── index.php
+│       ├── salamanders
+│       │   ├── create.php
+│       │   ├── delete.php
+│       │   ├── edit.php
+│       │   ├── index.php
+│       │   ├── new.php
+│       │   └── show.php
+│       └── stylesheets
+│           └── salamanders.css
+├── phase04
+│   ├── index.php
+│   ├── private
+│   │   ├── database.php
+│   │   ├── db_credentials.php
+│   │   ├── functions.php
+│   │   ├── initialize.php
+│   │   ├── query_functions.php
+│   │   ├── shared
+│   │   │   ├── salamander-footer.php
+│   │   │   └── salamander-header.php
+│   │   └── temp
+│   └── public
+│       ├── images
+│       ├── index.php
+│       ├── salamanders
+│       │   ├── create.php
+│       │   ├── delete.php
+│       │   ├── edit.php
+│       │   ├── index.php
+│       │   ├── new.php
+│       │   └── show.php
+│       └── stylesheets
+│           └── salamanders.css
+├── phase05
+│   ├── index.php
+│   ├── private
+│   │   ├── database.php
+│   │   ├── db_credentials.php
+│   │   ├── db_credentials.php-for-git.php
+│   │   ├── functions.php
+│   │   ├── initialize.php
+│   │   ├── query_functions.php
+│   │   ├── shared
+│   │   │   ├── salamander-footer.php
+│   │   │   └── salamander-header.php
+│   │   ├── temp
+│   │   └── validation_functions.php
+│   └── public
+│       ├── images
+│       ├── index.php
+│       ├── salamanders
+│       │   ├── delete.php
+│       │   ├── edit.php
+│       │   ├── index.php
+│       │   ├── new.php
+│       │   └── show.php
+│       └── stylesheets
+│           └── salamanders.css
+└── phase06
+    ├── file1.txt
+    └── file2.txt
+
+37 directories, 75 files
