@@ -27,7 +27,7 @@ include(SHARED_PATH . '/salamander-header.php');
 <!-- <p> Page ID: Use the h() function and pass in the id/p> -->
 <p> Page ID: <?php echo h($id) ?></p>
 
-<p><a href="<?= url_for('/salamanders/index.php'); ?>">&laquo; Back to Salamander List</a></p>
+<p><a href="<?= urlFor('/salamanders/index.php'); ?>">&laquo; Back to Salamander List</a></p>
 
 <!-- Use the shared path to the salamander footer. -->
  <?php include(SHARED_PATH . '/salamander-footer.php'); ?>

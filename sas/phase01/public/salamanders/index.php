@@ -46,7 +46,7 @@ Include a shared path to the salamander header -->
     	    <!-- <td>Display the salamander name</td> -->
           <td> <?php echo($salamander['salamanderName']); ?> </td>
           <!-- Use url_for with show.php AND h(u) with the salamander['id'] -->
-          <td><a href="<?php echo url_for('/salamanders/show.php?id=' . h($salamander['id'])); ?>">View</a></td>
+          <td><a href="<?php echo urlFor('/salamanders/show.php?id=' . h($salamander['id'])); ?>">View</a></td>
           <td><a href="#">Edit</a></td>
           <td><a href="#">Delete</a></td>
     	  </tr>
