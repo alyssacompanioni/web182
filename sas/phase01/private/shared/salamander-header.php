@@ -1,6 +1,6 @@
 <?php
-  if(!isset($pageTitle)) { 
-    $pageTitle = 'Salamanders'; 
+  if(!isset($page_title)) { 
+    $page_title = 'Southern Appalachian Salamanders'; 
   }
 ?>
 
@@ -8,7 +8,7 @@
 
 <html lang="en">
   <head>
-    <title>SAS - <?php echo h($pageTitle); ?></title>
+    <title>SAS - <?php echo h($page_title); ?></title>
     <meta charset="utf-8">
     <link rel="stylesheet" media="all" href="<?php echo url_for('/stylesheets/salamanders.css'); ?>" />
   </head>
