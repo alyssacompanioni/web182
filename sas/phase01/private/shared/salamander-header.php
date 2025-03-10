@@ -8,7 +8,10 @@
 
 <html lang="en">
   <head>
-    <title>SAS - <?php echo h($page_title); ?></title>
+    <title>SAS - <?php echo h($page_title); 
+    //Sam as <title>SAS - <?= h((page_title));<title>     - shortcut for php tag and echo
+    ?></title>
+
     <meta charset="utf-8">
     <link rel="stylesheet" media="all" href="<?php echo urlFor('/stylesheets/salamanders.css'); ?>" />
   </head>
