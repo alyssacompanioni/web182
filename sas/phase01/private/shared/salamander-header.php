@@ -9,7 +9,7 @@
 <html lang="en">
   <head>
     <title>SAS - <?php echo h($page_title); 
-    //Sam as <title>SAS - <?= h((page_title));<title>     - shortcut for php tag and echo
+    //Same as <title>SAS - <?= h((page_title));<title>     - shortcut for php tag and echo
     ?></title>
 
     <meta charset="utf-8">
