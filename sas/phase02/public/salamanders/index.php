@@ -31,7 +31,7 @@ include(SHARED_PATH . '/salamander-header.php');
     	    <td><?= h($salamander['salamanderName']); ?></td>
           <td><a href="<?= url_for('salamanders/show.php?id=' . h(u($salamander['id']))); ?>">View</a></td>
           <td><a href="<?= url_for('salamanders/edit.php?id=' . h(u($salamander['id']))); ?>">Edit</a></td>
-          <td><a href="">Delete</a></td>
+          <td><a href="<?= url_for('salamanders/delete.php?id=' . h(u($salamander['id']))); ?>">Delete</a></td>
     	  </tr>
       <?php } ?>
   	</table>
