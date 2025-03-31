@@ -133,3 +133,8 @@ dd {
 .bold {
   font-weight: bold;
 }
+
+/* new.php */
+form {
+  padding-left: 1em;
+}
