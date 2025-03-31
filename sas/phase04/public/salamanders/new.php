@@ -7,17 +7,17 @@ include(SHARED_PATH . '/salamander-header.php');
 
 <h1>Create Salamander</h1>
 
-<form action="create.php" method="post">
+<form action="<?php echo url_for('salamanders/create.php'); ?>" method="post">
   <label for="name">Name: </label><br>
-  <input type="text" id="name" value=""><br><br>
+  <input type="text" id="name" name="name" value=""><br><br>
 
   <label for="habitat">Habitat: </label><br>
-  <textarea rows="4" cols="50" id="habitat" value=""></textarea><br><br>
+  <textarea rows="4" cols="50" id="habitat" name="habitat" value=""></textarea><br><br>
 
   <label for="description">Description: </label><br>
-  <textarea rows="4" cols="50" id="habitat" value=""></textarea><br><br>
+  <textarea rows="4" cols="50" id="description" name="description" value=""></textarea><br><br>
 
-  <button type="submit">Create Salamander</button>
+  <input type="submit" value="Create Salamander">
 </form>
 
 <?php
