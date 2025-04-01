@@ -6,7 +6,6 @@ $salamander = find_salamander_by_id($id);
 
 $page_title = 'View Salamander';
 include(SHARED_PATH . '/salamander-header.php');
-
 ?>
 
 <h1>Salamander Details</h1>
