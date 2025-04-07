@@ -25,15 +25,15 @@ function find_salamander_by_id($id) {
   //returns assoc array
   }
 
-  function insert_salamander($name, $habitat, $description) {
+  function insert_salamander($salamander) {
     global $db;
 
     $sql = "INSERT into salamander ";
     $sql .= "(name, habitat, description) ";
     $sql .= "VALUES (";
-    $sql .= "'" . $name . "', ";
-    $sql .= "'" . $habitat . "', ";
-    $sql .= "'" . $description . "'";
+    $sql .= "'" . $salamander['name'] . "', ";
+    $sql .= "'" . $salamander['habitat'] . "', ";
+    $sql .= "'" . $salamander['description'] . "'";
     $sql .= ");";
   
     $result = mysqli_query($db, $sql);
@@ -75,7 +75,7 @@ function find_salamander_by_id($id) {
     global $db;
 
     $sql = "DELETE FROM salamander ";
-    $sql .= "WHERE id='" . $id . "' ";
+    $sql .= "WHERE id = '" . $id . "' ";
     $sql .= "LIMIT 1";
 
     $result = mysqli_query($db, $sql);

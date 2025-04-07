@@ -32,7 +32,7 @@ function error_500() {
 
 function redirect_to($location) {
   header("Location: " . $location);
-  exit();
+  exit;
 }
 
 function is_post_request() {

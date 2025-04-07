@@ -5,17 +5,17 @@ include(SHARED_PATH . '/salamander-header.php');
 
 if(is_post_request()) {
   //Handles form values sent by new.php
-
-  $name = $_POST['name'] ?? '';
-  $habitat = $_POST['habitat'] ?? '';
-  $description = $_POST['description'] ?? '';
+  $salamander = [];
+  $salamander['name'] = $_POST['name'] ?? '';
+  $salamander['habitat'] = $_POST['habitat'] ?? '';
+  $salamander['description'] = $_POST['description'] ?? '';
 
   // echo "Form parameters: <br>";
   // echo "Salamander name: " . $name . "<br>";
   // echo "Habitat: " . $habitat . "<br>";
   // echo "Description: " . $description . "<br>";
 
-  $result = insert_salamander($name, $habitat, $description);
+  insert_salamander($salamander);
   $new_id = mysqli_insert_id($db);
   redirect_to(url_for('salamanders/show.php?id=' . $new_id));
 } else {
