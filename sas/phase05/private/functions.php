@@ -30,9 +30,17 @@ function error_500() {
   exit();
 }
 
+// function redirect_to($location) {
+//   header("Location: " . $location);
+//   header("Cache-Control: no-cache, must-revalidate"); 
+//   header("HTTP/1.1 303 See Other");
+//   exit();
+// }
+
 function redirect_to($location) {
   header("Location: " . $location);
-  exit;
+  header($_SERVER["SERVER_PROTOCOL"] . " 303 See Other");
+  exit();
 }
 
 function is_post_request() {

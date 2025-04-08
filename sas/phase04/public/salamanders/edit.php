@@ -9,7 +9,7 @@ echo "<h1>Edit Salamander</h1>";
 $id = $_GET['id'];
 
 //$salamander = find_salamander_by_id($id);
-//I didn't have this line previously but it is Wallin's CH5 starter code with a note that says "should be removed but for now it works" lol.. Didn't seem to make a difference when included. 
+//I didn't have this line previously but it is Wallin's CH5 starter code with a note that says "should be removed but for now it works." Didn't seem to make a difference when included. 
 
 if(is_post_request()) {
   //Handles form values sent by edit.php

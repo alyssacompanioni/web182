@@ -1,7 +1,7 @@
 
 DROP TABLE IF EXISTS salamander;
 CREATE TABLE `salamander` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL  PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `habitat` text,
   `description` text
@@ -17,7 +17,5 @@ INSERT INTO `salamander` (`id`, `name`, `habitat`, `description` ) VALUES
 --
 -- Indexes for table `salamander`
 --
-ALTER TABLE `salamander`
-  ADD PRIMARY KEY (`id`);
 
 -- Create a user named sally and grant that user all privileges
