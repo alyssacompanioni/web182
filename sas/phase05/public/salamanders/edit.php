@@ -1,10 +1,8 @@
 <?php
 
 require_once('../../private/initialize.php');
+$page_title = 'Edit Salamander';
 include(SHARED_PATH . '/salamander-header.php'); 
-
-$pageTitle = 'Edit Salamander';
-echo "<h1>Edit Salamander</h1>";
 
 $id = $_GET['id'];
 
@@ -20,13 +18,21 @@ if(is_post_request()) {
   $salamander['habitat'] = $_POST['habitat'] ?? '';
   $salamander['description'] = $_POST['description'] ?? '';
  
-  update_salamander($salamander);
-  redirect_to(url_for('salamanders/show.php?id=' . $id));
-  
+  $result = update_salamander($salamander);
+  if($result === true) {
+    redirect_to(url_for('salamanders/show.php?id=' . $id));
+  } else {
+    $errors = $result;
+    // var_dump($errors);
+  }
 } else {
   $salamander = find_salamander_by_id($id);
 }
 ?>
+
+<h1>Edit Salamander</h1>
+
+<?php echo display_errors($errors); ?>
 
 <form action="<?php echo url_for('salamanders/edit.php?id=' . h(u($id))); ?>" method="post">
   <label for="name">Name: </label><br>
