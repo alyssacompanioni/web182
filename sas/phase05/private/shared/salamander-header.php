@@ -1,4 +1,5 @@
 <?php
+header("Cache-Control: no-cache"); //added to troubleshoot redirect issue
 if (!isset($page_title)) {
   $page_title = 'Salamanders';
 }
