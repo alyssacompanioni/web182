@@ -25,7 +25,7 @@ $salamander_count = mysqli_num_rows($salamander_set) +1;
 mysqli_free_result($salamander_set);
 
 $salamander = [];
-$salamander['id'] = $subject_count;
+$salamander['id'] = $salamander_count;
 
 $page_title = 'Create Salamander';
 include(SHARED_PATH . '/salamander-header.php');
