@@ -3,7 +3,7 @@
 // 1.) Connect to the MySQL database
 $server = "localhost";
 $user = "wbip";
-$pw = "wbip123";
+$pw = "wbip12321";
 $db = "test";
 $connect = mysqli_connect($server, $user, $pw, $db);
 
