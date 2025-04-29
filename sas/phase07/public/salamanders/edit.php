@@ -1,4 +1,5 @@
 <?php
+ob_start();
 /**
  * Edit Salamander
  * 
@@ -32,13 +33,17 @@ if (is_post_request()) {
     $salamander['description'] = $_POST['description'] ?? '';
     
     $result = update_salamander($salamander);
+    //debugging redirect issue
+    // var_dump($result);
+    // exit;
+
     if ($result === true) {
         // CHANGE: Added proper spacing in control structures
         redirect_to(url_for('salamanders/show.php?id=' . $id));
     } else {
         $errors = $result;
         // CHANGE: Added comment for debugging line that's commented out
-        // Debug line: var_dump($errors);
+        //Debug line: var_dump($errors);
     }
 } else {
     // Fetch salamander record if not a form submission
@@ -66,4 +71,4 @@ if (is_post_request()) {
 
 <?php
 include(SHARED_PATH . '/salamander-footer.php');
-?>
+ob_end_flush();?>
